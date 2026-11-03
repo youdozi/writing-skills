@@ -1,0 +1,4 @@
+interface:
+  display_name: "일반 글쓰기"
+  short_description: "팩트·픽션 기반을 구분해 여러 분야의 글을 자연스럽고 간결하게 작성·퇴고합니다"
+  default_prompt: "$writing 스킬로 요청과 자료에 맞는 팩트 기반 또는 픽션 기반을 선택해 자연스럽고 간결하게 작성·퇴고해 주세요."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CMS 화면 글쓰기"
+  short_description: "CMS 관리자 화면의 버튼·입력 안내·오류·게시·권한 문구를 명확하게 작성·퇴고합니다"
+  default_prompt: "$cms-ux-writing 스킬로 제공한 CMS 화면과 동작에 맞는 간결하고 명확한 UI 문구를 작성해 주세요."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "시나리오 창작"
+  short_description: "영화·드라마·숏폼의 이야기와 장면·대사를 기획하고 대본을 작성·퇴고합니다"
+  default_prompt: "$screenplay-writing 스킬로 제공한 아이디어와 제작 조건에 맞춰 시나리오를 기획하거나 작성·퇴고해 주세요."

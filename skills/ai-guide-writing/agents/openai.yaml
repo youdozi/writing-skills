@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 가이드 글쓰기"
+  short_description: "AI 사용법·프롬프트·업무 활용 가이드를 따라 할 단계와 결과 확인 기준까지 작성합니다"
+  default_prompt: "$ai-guide-writing 스킬로 독자의 목표와 제공 자료에 맞는 AI 활용 가이드를 단계·프롬프트·결과 확인 기준과 함께 작성해 주세요."

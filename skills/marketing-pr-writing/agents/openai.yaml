@@ -1,0 +1,4 @@
+interface:
+  display_name: "마케팅·PR 글쓰기"
+  short_description: "캠페인·광고·이메일·SNS·보도자료·언론 대응문을 목적과 확인된 근거에 맞춰 작성합니다"
+  default_prompt: "$marketing-pr-writing 스킬로 목표 독자와 채널, 제공한 사실에 맞는 자연스럽고 설득력 있는 마케팅·PR 원고를 작성해 주세요."
