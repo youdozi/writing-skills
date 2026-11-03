@@ -1,55 +1,59 @@
 # Writing Skills
 
-자연스럽고 간결한 글을 쓰고 다듬기 위한 AI 스킬 8개입니다. 한국어를 기본으로 하며 요청한 언어·독자·장르에 맞춰 작성·번역합니다.
+**English** | [한국어](README.ko.md)
 
-## 포함된 스킬
+Eight AI agent skills for writing, editing, and translation. Korean is the default language; you can request another language, audience, or genre.
 
-| 스킬 | 용도 |
+## Included skills
+
+| Skill | Purpose |
 | --- | --- |
-| [writing](skills/writing/SKILL.md) | 교양·시사·커뮤니티·일상·소설·고객 커뮤니케이션 |
-| [tech-blog-writing](skills/tech-blog-writing/SKILL.md) | 기술 해설·튜토리얼·트러블슈팅·비교·회고 |
-| [translate](skills/translate/SKILL.md) | 의미를 보존한 번역·현지화·번역문 검토 |
-| [website-copywriting](skills/website-copywriting/SKILL.md) | 홈페이지·랜딩페이지·서비스 소개·FAQ |
-| [cms-ux-writing](skills/cms-ux-writing/SKILL.md) | 관리자 화면의 버튼·도움말·오류·작업 상태 문구 |
-| [marketing-pr-writing](skills/marketing-pr-writing/SKILL.md) | 캠페인·광고·SNS·보도자료·공식 입장문 |
-| [ai-guide-writing](skills/ai-guide-writing/SKILL.md) | AI 도구 사용법·프롬프트·업무 가이드 |
-| [screenplay-writing](skills/screenplay-writing/SKILL.md) | 영화·드라마·숏폼의 시나리오·장면·대사 |
+| [writing](skills/writing/SKILL.md) | General-interest explanations, current affairs, community posts, everyday writing, fiction, and client communication |
+| [tech-blog-writing](skills/tech-blog-writing/SKILL.md) | Technical explanations, tutorials, troubleshooting, comparisons, and retrospectives |
+| [translate](skills/translate/SKILL.md) | Translation, localization, and translation review while preserving meaning |
+| [website-copywriting](skills/website-copywriting/SKILL.md) | Websites, landing pages, service descriptions, and FAQs |
+| [cms-ux-writing](skills/cms-ux-writing/SKILL.md) | Admin interface buttons, help text, errors, and workflow status messages |
+| [marketing-pr-writing](skills/marketing-pr-writing/SKILL.md) | Campaigns, ads, social posts, press releases, and public statements |
+| [ai-guide-writing](skills/ai-guide-writing/SKILL.md) | AI tool instructions, prompts, and workflow guides |
+| [screenplay-writing](skills/screenplay-writing/SKILL.md) | Film, television, and short-form screenplays, scenes, and dialogue |
 
-각 폴더의 `SKILL.md`가 시작점이며, 필요한 세부 지침은 해당 `references/`에서 읽습니다. 모든 참고 문서를 매번 읽거나 모든 작업에 긴 양식을 적용하지 않습니다.
+The skill instructions are currently written primarily in Korean. This English README explains how to use them; it is not a full English translation of the skill files.
 
-## 설치와 사용
+Start with each folder's `SKILL.md`. Read the relevant material in `references/` when needed. You do not need to load every reference or use a long template for every task.
 
-1. 이 저장소를 내려받습니다.
-2. 필요한 `skills/<이름>` 폴더를 사용 환경의 스킬 디렉터리에 복사합니다. 기존에 같은 이름의 폴더가 있다면 먼저 차이를 확인하고 보관한 뒤 반영하세요.
-3. 새 세션에서 스킬이 발견되는지 확인하고 요청합니다.
+## Install and use
 
-Codex 사용자 설치 예시는 `~/.agents/skills/writing/SKILL.md` 형태입니다. 모든 호스트가 이 경로나 호출 표기를 지원하는 것은 아니므로 사용 중인 환경의 설치 방식을 확인하세요.
+1. Download or clone this repository.
+2. Copy the `skills/<name>` folders you need into your agent's skills directory. If a folder with the same name already exists, compare and back it up before replacing it.
+3. Start a new session, check that the skills are available, and make your request.
 
-요청 예시:
+For Codex, a user-level installation example is `~/.agents/skills/writing/SKILL.md`. Paths and invocation syntax vary by host, so check your environment's installation instructions. See the [official OpenAI documentation](https://learn.chatgpt.com/docs/build-skills) for Codex skill installation and invocation.
+
+Example requests:
 
 ```text
-$writing 비 오는 저녁의 편의점을 배경으로 200자 안팎의 짧은 일상 글을 써줘. 가상 장면이고 담백한 말투로 부탁해.
+$writing Write a fictional slice-of-life scene in Korean, around 200 characters, set in a convenience store on a rainy evening. Use a plain, understated tone.
 
-$tech-blog-writing 이 오류 재현 기록으로 기술 글을 써줘. 확인한 원인과 추정을 구분하고 해결·검증 과정을 짧게 정리해줘.
+$tech-blog-writing Turn this error reproduction record into a technical blog post. Distinguish confirmed causes from hypotheses, and briefly explain the fix and how it was verified.
 
-$translate 이 안내를 일본어로 자연스럽게 옮겨줘. 수치·조건과 {version}은 그대로 유지해줘.
+$translate Translate this notice naturally into Japanese. Preserve the numbers, conditions, and {version}.
 
-$website-copywriting 제공한 서비스 사실만 사용해서 첫 화면 제목·설명·문의 버튼 문구를 만들어줘.
+$website-copywriting Using only the supplied service facts, write a headline, description, and inquiry button label for the first screen.
 ```
 
-## 작성 원칙
+## Writing principles
 
-- 사실 기반 자료와 허구를 구분하고, 없는 경험·수치·출처를 만들어내지 않습니다.
-- 독자의 목적과 화자의 목소리를 유지하며 반복과 상투적인 표현을 줄입니다.
-- 번역은 의미·조건·식별자를 보존하면서 독자의 언어·문화 맥락에 맞춥니다.
-- 필요한 범위만 검토하고, 실제 확인한 근거와 미확인 사항을 구분합니다.
+- Distinguish factual material from fiction. Do not invent experiences, figures, or sources.
+- Preserve the reader's purpose and the writer's voice while reducing repetition and stock phrasing.
+- Preserve meaning, conditions, and identifiers in translation while adapting expression to the reader's language and cultural context.
+- Review what the task requires, and distinguish verified evidence from unresolved points.
 
-이 스킬은 에이전트의 작업 지침입니다. 특정 모델·언어·독자·주제의 품질이나 사실 정확성을 보증하지 않으며, 게시 전 사용자의 검토가 필요합니다. 외부 자료를 확인하는 기능은 사용 환경의 도구와 권한에 따라 달라집니다.
+These skills are instructions for an agent. They do not guarantee writing quality or factual accuracy for any model, language, audience, or subject. Review the output before publishing. Access to external sources depends on the tools and permissions available in your environment.
 
-## 업데이트
+## Updates
 
-공개 대상 파일을 선별하는 동기화 절차로 관리합니다. 스킬과 이 안내의 변경은 관리 원본에 반영한 뒤 게시하므로, 공개 저장소에 직접 수정한 내용은 다음 동기화에서 덮어써질 수 있습니다.
+The public files are maintained through a selective synchronization process. Changes to the skills and these instructions are published from their maintained source, so edits made directly in this repository may be overwritten by a later sync.
 
-## 라이선스
+## License
 
-[MIT License](LICENSE). 원문에 링크된 외부 문서·기사 등의 권리는 해당 권리자에게 있으며, 이 프로젝트의 라이선스가 그 자료까지 재허락하는 것은 아닙니다.
+[MIT License](LICENSE). External documents and articles linked from the skill files remain subject to their respective rights; this project's license does not relicense them.
